@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <title>task_2.forecast</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <p class="display_center">Прогноз погоди</p>
+        <p class="town display_center"></p>
+        <p class="display_center" id="date"></p>
+      </div>
+
+      <hr>
+
+      <div class="center">
+        <canvas id="picture"></canvas>
+        <div class="temperature">
+          <p id="current_temperature"></p>
+          <div class="maxMinCenter">
+            <p id="minimum"></p>
+            <p id="maximum"></p>
+          </div>
+        </div>
+        <p id="summary"></p>
+      </div>
+
+      <hr>
+
+      <div class="footer">
+        <p class="options_weather" id="wind_speed"></p>
+        <p class="options_weather" id="pressure"></p>
+        <button type="button" class="btn btn-lg btn-primary" id="btn-previous">Попередній день</button>
+        <button type="button" class="btn btn-lg btn-primary" id="btn-next">Наступний день</button>
+      </div>
+    </div>
+
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+
+</html>
